@@ -17,7 +17,7 @@ public class Bannerstep {
 	}
 	@When("User hovers on the banner")
 	public void user_hovers_on_the_banner() {
-	    ban.hoveronBamnner(2);
+	    ban.hoveronBamnner();
 	}
 	@Then("user clicks on forward button on banner")
 	public void user_clicks_on_forward_button_on_banner() {
