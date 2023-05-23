@@ -8,7 +8,7 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
 	plugin={"pretty"},
-	tags="@homebaner",
+	tags="@HomeBeautyMenu",
 	features="src/test/resources/Features",
 	glue="Stepdefinitions"
 )

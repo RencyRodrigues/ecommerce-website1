@@ -28,8 +28,8 @@ public class HomeBeautyMenustep {
 	@Then("User is able to view all the subcategories")
 	public void user_is_able_to_view_all_the_subcategories() {
 		//menu.sortcategory();
-				menu.sortcatogery("Flyers & Deals","Flyer");
-			  // menu2.sortcatogery("Grocery", "International Foods");
+				//menu.sortcatogery("Flyers & Deals","Flyer");
+			   menu.sortcatogery("Grocery", "Eggs");
 				
 	}
 	@Then("user is able to hover over the Sub-Category")
