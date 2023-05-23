@@ -19,47 +19,49 @@ public class Homebanner extends PageObject{
 
 
 public void hoveronBamnner() {
-	Actions actions=new Actions(getDriver());
-//	   WebElement banner=getDriver().findElement(By.xpath("//div[@data-cms-id='1rBmZzqAVThOPbw4X2x0Zn']")) ;
-//	   actions.moveToElement(banner).build().perform();
-//	   banner.click();
-//	
-	WebElement slider =getDriver().findElement(By.xpath("//button[@data-testid='carousel-btn-next']"));
-	actions.moveToElement(slider).perform();
-	slider.click();
-//	
-//	
-//	//actions.dragAndDropBy(slider,4, 2).perform();
-//	//String s="\"span[@class ='hidden-text']";
-//	//List<WebElementFacade> listofslides = findAll(By.xpath(s));
-//	
-//	   
-//	  //actions.dragAndDropBy(slider,3, 2).perform();
-//	   waitABit(4000);
-////	   WebElement slider2 = getDriver().findElement(By.xpath("/html/body/div[1]/div/div[2]/main/div[1]/div/div/div[1]/div/div/div/div/div/ul/li[3]/button/span"));
-////		  actions.dragAndDropBy(slider2,3, 2).perform();
-////		   waitABit(4000);
-//   WebElement slider1 = getDriver().findElement(By.xpath("/html/body/div[1]/div/div[2]/main/div[1]/div/div/div[1]/div/div/div/div/div/ul/li[1]/button/span"));
-//   actions.dragAndDropBy(slider1,3,3).perform();
-//   waitABit(4000);
-//	
-//    //Action action = (Action) move.dragAndDropBy(slider, 30, 0).build();
-//    
+   
 	   	   }
 	public void scrollForward() {
-		
-		scrollforward.click();
-		
+		Actions actions=new Actions(getDriver());
+		WebElement forwardslider =getDriver().findElement(By.xpath("//button[@data-testid='carousel-btn-next']"));
+		actions.moveToElement(forwardslider).perform();
+		forwardslider.click();
 		waitABit(4000);
-		scrollforward.click();
+		actions.moveToElement(forwardslider).perform();
+		forwardslider.click();
+		waitABit(4000);
+		actions.moveToElement(forwardslider).perform();
+		forwardslider.click();
+		waitABit(4000);
+		actions.moveToElement(forwardslider).perform();
+		forwardslider.click();
+		waitABit(4000);
+//		scrollforward.click();
+//		
+//		waitABit(4000);
+//		scrollforward.click();
 		
 	}
 	public void scrollBackward() {
-
-		scrollbackward.click();
 		
+		Actions actions=new Actions(getDriver());
+		WebElement backwardslider =getDriver().findElement(By.xpath("//button[@data-testid='carousel-btn-prev']"));
+		actions.moveToElement(backwardslider).perform();
+		backwardslider.click();
 		waitABit(4000);
-		scrollbackward.click();
+		actions.moveToElement(backwardslider).perform();
+		backwardslider.click();
+		waitABit(4000);
+		actions.moveToElement(backwardslider).perform();
+		backwardslider.click();
+		waitABit(4000);
+		actions.moveToElement(backwardslider).perform();
+		backwardslider.click();
+		waitABit(4000);
+//		scrollbackward.click();
+//		
+//		waitABit(4000);
+//		scrollbackward.click();
 	}
 	
 
